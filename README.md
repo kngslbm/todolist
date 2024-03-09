@@ -46,4 +46,4 @@ to do list를 삭제하는 기능을 추가하였다.
 ![tnwjd](https://github.com/kngslbm/todolist/assets/148850117/53e760f5-0ff9-4742-9e91-2242b69dc6f4)
 
 
-check 크기 줄임
+녹색 check 표시 최대한 깔끔해 보이는 위치와 크기로 조절
