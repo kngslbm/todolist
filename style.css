@@ -74,7 +74,7 @@ html {
 
 .done::after {
     content: "";
-    width: 107px;
+    width: 65px;
     height: 70px;
     background-image: url("./check.png");
     background-size: cover;

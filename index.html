@@ -9,13 +9,7 @@
 </head>
 
 <body class="bg center">
-    <!-- 노래재생 파트 -->
-    <audio id="myAudio">
-        <source src="./bgm.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
-    </audio>
-    <button onclick="playAudio()" type="button">Play Audio</button>
-    <button onclick="pauseAudio()" type="button">Pause Audio</button>
+    <button class="btn1">BGM</button>
 
     <h1 class="title">To Do List</h1>
     <p class="msg">don't waste time on stupid shit. make sure to get the important shit done.
@@ -29,18 +23,7 @@
         <div class="postit post1 center">SQL 문제 풀기</div>
         <div class="postit post2 center">사이드 프로젝트 준비</div>
     </div>
-    <script>
-        // 노래 설정
-        var x = document.getElementById("myAudio");
-
-        function playAudio() {
-            x.play();
-        }
-
-        function pauseAudio() {
-            x.pause();
-        } 
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
