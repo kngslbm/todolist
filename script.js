@@ -83,3 +83,21 @@ document.getElementById("addButton").addEventListener("click", function () {
     });
   }
 });
+
+
+// To Do 항목 삭제
+document.getElementById("deleteButton").addEventListener("click", function () {
+  // To Do 리스트를 가져옴
+  const todoList = document.querySelector(".flex-row");
+
+  // 가장 최근에 추가된 To Do 항목을 찾아 삭제
+  const lastAddedTodo = todoList.lastElementChild;
+  if (lastAddedTodo) {
+    // 마지막에 추가된 To Do 항목 삭제
+    todoList.removeChild(lastAddedTodo);
+
+    // 삭제된 To Do 항목의 로컬 스토리지 항목도 삭제
+    const index = Array.from(todoList.children).indexOf(lastAddedTodo);
+    localStorage.removeItem("postit" + index);
+  }
+});
