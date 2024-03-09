@@ -1,3 +1,13 @@
+@keyframes scale-out {
+    0% {
+        transform: scale(1.4);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
 html {
     display: flex;
     flex-direction: column;
@@ -75,14 +85,16 @@ html {
 
 .done::after {
     content: "";
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     background-image: url("./check.png");
     background-size: cover;
     background-position: center;
     position: absolute;
-    right: 20%;
+    right: 27%;
     top: 28%;
+
+    animation: scale-out 0.1s ease-in-out 1;
 }
 
 .btn1 {
