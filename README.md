@@ -39,3 +39,11 @@ to do list 를 쓴 postit 을 붙이고 완료하면 check 할 수 있는 간단
 to do list를 삭제하는 기능을 추가하였다.
 
 가장 늦게 추가된 순으로 삭제되며 기존의 list도 삭제할 수 있다.
+
+---
+
+### 추가 수정사항
+![tnwjd](https://github.com/kngslbm/todolist/assets/148850117/53e760f5-0ff9-4742-9e91-2242b69dc6f4)
+
+
+check 크기 줄임
