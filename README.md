@@ -28,3 +28,14 @@ to do list 를 쓴 postit 을 붙이고 완료하면 check 할 수 있는 간단
 이때 총 4가지의 postit 모양이 돌아가며 추가된다.
 
 오른쪽 아래에는 BGM을 on/off 할 수 있는 button을 추가했다.
+
+---
+
+### 삭제 기능 추가
+
+![3차](https://github.com/kngslbm/todolist/assets/148850117/8b4d3f49-8766-42ea-acd8-c3598e448e2b)
+
+
+to do list를 삭제하는 기능을 추가하였다.
+
+가장 늦게 추가된 순으로 삭제되며 기존의 list도 삭제할 수 있다.
