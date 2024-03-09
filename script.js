@@ -43,3 +43,43 @@ document.querySelector(".btn1").addEventListener("click", function () {
     isPlaying = true; // 재생 중인지 여부를 true로 변경
   }
 });
+
+// To Do 항목 추가
+document.getElementById("addButton").addEventListener("click", function () {
+  // 입력 필드에서 값을 가져옴
+  const todoText = document.getElementById("todoInput").value.trim();
+
+  // 값이 비어있지 않은 경우에만 추가
+  if (todoText !== "") {
+    // 새로운 To Do 항목을 생성
+    const newTodo = document.createElement("div");
+    newTodo.classList.add("postit", "center");
+
+    // To Do 리스트에 추가
+    const todoList = document.querySelector(".flex-row");
+
+    // 새로운 To Do 항목 추가
+    todoList.appendChild(newTodo);
+    newTodo.textContent = todoText;
+
+    // To Do 항목의 클래스를 순서대로 부여
+    const existingTodos = todoList.querySelectorAll('.postit');
+    const newClassIndex = existingTodos.length % 4; // 현재 클래스 인덱스 계산
+    newTodo.classList.add(`post${newClassIndex + 1}`);
+
+    // 입력 필드 초기화
+    document.getElementById("todoInput").value = "";
+
+    // 클릭 이벤트 추가
+    newTodo.addEventListener("click", function () {
+      newTodo.classList.toggle("done");
+      // 로컬 스토리지에 상태 저장
+      const index = Array.from(todoList.children).indexOf(newTodo);
+      if (newTodo.classList.contains("done")) {
+        localStorage.setItem("postit" + index, "done");
+      } else {
+        localStorage.setItem("postit" + index, "");
+      }
+    });
+  }
+});
